@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Upload/View Excel</title>
+</head>
+
+<body>
+	
+	<center><h1>Cargar planilla excel (.xlsx)</h1>
+	<form action="{{ url_for('view') }}" method="post" enctype="multipart/form-data">
+		<input type="file" name="file"
+			accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel">
+		<input type="submit" value="Subir !!">
+	</form>
+	</center>
+
+	{% include 'map.html' %}
+
+
+</body>
+
+</html>
